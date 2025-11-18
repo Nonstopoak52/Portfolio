@@ -1,0 +1,176 @@
+/* Global Layout */
+.app-container {
+  min-height: 100vh;
+  background: #f7f7fa;
+  color: #222;
+  font-family: 'Inter', Arial, sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 90px;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffffd9;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 20;
+}
+
+.nav-items {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px;
+}
+
+.nav-items button {
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+  transition: all 0.25s ease;
+}
+
+.nav-items button:hover {
+  color: #2b6dde;
+  transform: translateY(-2px);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 40px 20px 60px;
+  max-width: 800px;
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.main-title {
+  margin-top: 18px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1d1d1f;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: #666;
+}
+
+/* Sections */
+.section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  margin-bottom: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background: #f9f9fb;
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid #ececec;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-desc {
+  color: #555;
+  line-height: 1.5rem;
+}
+
+/* Resume + Cover */
+.download-buttons {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.download-btn {
+  background: #2b6dde;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #1f54aa;
+  transform: translateY(-2px);
+}
+
+/* Contact */
+.contact-list {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.05rem;
+}
+
+.link {
+  color: #2b6dde;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 700;
+}
