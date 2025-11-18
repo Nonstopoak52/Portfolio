@@ -2,7 +2,7 @@ import './App.css'
 import { useRef } from 'react'
 
 
-export default function App() {
+function App() {
 const projectsRef = useRef(null)
 const resumeRef = useRef(null)
 const contactRef = useRef(null)
@@ -68,3 +68,4 @@ return (
 </div>
 )
 }
+export default App;
