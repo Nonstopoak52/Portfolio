@@ -25,7 +25,7 @@ return (
 
 
 <header className="header">
-<img src="/face.png" alt="My face" className="profile-img" />
+<img src="Images/myface.png" alt="My face" className="profile-img" />
 <h1 className="main-title">Welcome to My Portfolio</h1>
 <p className="subtitle">A showcase of my work, experience, and contact info</p>
 </header>
@@ -35,12 +35,12 @@ return (
 <h2 className="section-title">Projects</h2>
 <div className="project-grid">
 <div className="project-card">
-<h3 className="project-title">Project 1</h3>
-<p className="project-desc">Description of project 1 goes here.</p>
+<h3 className="project-title">UXUI Final Project</h3>
+<p className="project-desc">I had created an entire website with audio capablilities, the purpose of which was to be an audiobook/recipe website. You can check it out here:https://github.com/Nonstopoak52/AudioBitesCody</p>
 </div>
 <div className="project-card">
-<h3 className="project-title">Project 2</h3>
-<p className="project-desc">Description of project 2 goes here.</p>
+<h3 className="project-title">Portfolio</h3>
+<p className="project-desc">Using a lot of react to create and develop this site, constantly learning from my mistakes to create this beautiful page.</p>
 </div>
 </div>
 </section>
@@ -60,9 +60,9 @@ return (
 <h2 className="section-title">Contact</h2>
 <p>Feel free to reach out:</p>
 <div className="contact-list">
-<p>Email: <span className="bold">you@example.com</span></p>
-<p>LinkedIn: <a href="#" className="link">linkedin.com/in/you</a></p>
-<p>GitHub: <a href="#" className="link">github.com/you</a></p>
+<p>Email: <span className="bold">borhocody@gmail.com</span></p>
+<p>LinkedIn: <a href="#" className="link">linkedin.com/in/cody-borho-448723304</a></p>
+<p>GitHub: <a href="#" className="link">github.com/Nonstopoak52</a></p>
 </div>
 </section>
 </div>
