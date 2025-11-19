@@ -1,45 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cody Borho Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cody Borho Portfolio</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="your-photo.jpg" alt="Cody Borho" class="profile-pic" />
-      <h1>Cody Borho</h1>
-      <p>My mission is to create meaningful, impactful projects while continually growing as a developer and problem-solver.</p>
+<div class="container">
+<header>
+<div class="profile-pic-container">
+<img src="Image/myface.png" alt="Cody Borho" class="profile-pic" />
+</div>
+<h1>Cody Borho</h1>
+<p>My mission is to create meaningful, impactful projects while continually growing as a developer and problem-solver.</p>
 
-      <nav>
-        <button onclick="scrollToSection('projects')">Projects</button>
-        <button onclick="scrollToSection('resume')">Resume & Cover Letter</button>
-        <button onclick="scrollToSection('contact')">Contact</button>
-      </nav>
-    </header>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-slot">Project Slot 1</div>
-      <div class="project-slot">Project Slot 2</div>
-    </section>
+<nav>
+<button onclick="scrollToSection('projects')">Projects</button>
+<button onclick="scrollToSection('resume')">Resume & Cover Letter</button>
+<button onclick="scrollToSection('contact')">Contact</button>
+<button onclick="scrollToSection('accolades')">Accolades</button>
+</nav>
+</header>
 
-    <section id="resume">
-      <h2>Resume & Cover Letter</h2>
-      <div class="resume-slot">Resume Slot 1</div>
-      <div class="resume-slot">Cover Letter Slot 2</div>
-    </section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="project-slot">
+<h3>UX/UI Design: Audio Bites</h3>
+<div class="project-description">Developed around 62 pages of html code that had audio related code and text that would highlight with the speech in the audio files. Along with really amazing looking design that mimics Audible.com</div>
+</div>
+<div class="project-slot">
+<h3>Capstone Project</h3>
+<div class="project-description">Developed with a team, a database with mobile capabilites, security, and data tracking for Techbridge. Not only coding but assisting in developing Enitity Relationship Diagrams and Data Flow Diagrams, being able to understand the full business.</div>
+</div>
+</section>
+
+
+<section id="resume">
+<h2>Resume</h2>
+<div class="resume-content">
+<a href="Resume/Cody Resume.pdf" download>Download My Resume (PDF)</a>
+<p><strong>Cody Borho</strong></p>
+<p>Borhocody@gmail.com • (403)-394-8808</p>
+
+
+<h3>Skills</h3>
+<p><strong>Organizational & Interpersonal Skills</strong></p>
+<ul>
+<li>Strong organizational abilities</li>
+<li>Efficient in team environments</li>
+<li>Great leadership skills</li>
+<li>Friendly demeanor</li>
+<li>Excellent interpersonal and communication skills</li>
+</ul>
+
+
+<p><strong>Programming Languages</strong></p>
+<p>C#, C++, Java, JavaScript, Python, SQL, HTML</p>
+
+
+<p><strong>Software & Frameworks</strong></p>
+<p>Microsoft Office, Adobe Photoshop, Maple, Git, React, jQuery</p>
+
+
+<h3>Professional Experience</h3>
+<p><strong>Down to Earth Labs Inc., 3510 6 Ave North, Lethbridge, AB Sep-Nov 2023</strong></p>
+<p>Soil Technician</p>
+<ul>
+<li>Great contribution to the grinders technology to allow for more efficient operation practices</li>
+<li>Efficient worker, completing my job long before the day had ended</li>
+<li>Team player, assisting with other tasks to boost productivity amongst the team</li>
+</ul>
+
+
+<p><strong>Anchor Products, 2801 2 Ave North, Lethbridge, AB Jul-Aug 2024</strong></p>
+<p>Warehouse Management</p>
+<ul>
+<li>Incredible efforts towards revitalizing the inventory management system</li>
+<li>Record keeping skills that allowed a greater understanding of inventory for the team</li>
+<li>Managed Solo shipments coming in and out demonstrating great responsibility</li>
+<li>Effortlessly handling both customers and drivers, being able to assist both with their needs</li>
+</ul>
+
+
+<h3>Projects & Extracurricular</h3>
+<p><strong>MID Techbridge Sep-Apr 2025-2026</strong></p>
+<ul>
+<li>Developed an Inventory Management Database for Techbridge to assist with their work</li>
+<li>Developed a systems interface for onsite workers to track and update the inventory when interacting with a client</li>
+</ul>
+
+
+<p><strong>Entrepreneurship Course Sep-Dec 2025</strong></p>
+<ul>
+<li>Created a functioning business with an innovative idea</li>
+<li>Demonstrated great leadership via resolving conflicts between members</li>
+<li>Spearheading the creative process and assisting team members with complex marketing strategies</li>
+</ul>
+
+
+<h3>Education</h3>
+<p><strong>Lethbridge Polytechnic, 3000 College Dr South, Lethbridge, AB 2026</strong></p>
+<p>Associate's degree in computer science, 3.6 GPA</p>
+<p>Relevant course work: Capstone project: Techbridge, UI-UX website and presentations.</p>
+</div>
+</section>
+
+
+<section id="accolades">
+<h2>Accolades</h2>
+<div class="accordion">
+<button class="accordion-btn">Randall Brezina</button>
+<div class="accordion-content"><p>You're cooked bro. Just switch to accounting</p></div>
+
+
+<button class="accordion-btn">Dustin Peterson</button>
+<div class="accordion-content"><p>Truth be told, you're doing things I ain't even know existed. Can't wait to cast with you man.</p></div>
+
+
+<button class="accordion-btn">Timothy Frantz</button>
+<div class="accordion-content"><p>Possibly the best student to ever grace my path. My life has never been the same, and I don't believe another student like him will come around. Truly the Micheal Jordan X Lebron James of coding</p></div>
+</div>
+</section>
+
+
+
+
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><strong>Email:</strong> your-email@example.com</p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p><strong>Email:</strong> borhocody@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cody-borho-448723304">linkedin.com/in/cody-borho</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Nonstopoak52">github.com/Nonstopoak52</a></p>
     </section>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+	const accordions = document.querySelectorAll('.accordion-btn');
+	accordions.forEach(btn => {
+		btn.addEventListener('click', () => {
+			btn.classList.toggle('active');
+			const panel = btn.nextElementSibling;
+			panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+		});
+	});
+</script>
 </body>
 </html>
