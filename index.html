@@ -139,13 +139,21 @@
 
   <script>
 	const accordions = document.querySelectorAll('.accordion-btn');
-	accordions.forEach(btn => {
-		btn.addEventListener('click', () => {
-			btn.classList.toggle('active');
-			const panel = btn.nextElementSibling;
-			panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
-		});
-	});
+
+accordions.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
+    const panel = btn.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.padding = "0 15px";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.padding = "10px 15px";
+    }
+  });
+});
 </script>
 </body>
 </html>
