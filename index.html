@@ -1,13 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cody Borho Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="Images/myface.png" alt="Cody Borho" class="profile-pic" />
+      <h1>Cody Borho</h1>
+      <p>My mission is to create meaningful, impactful projects while continually growing as a developer and problem-solver.</p>
+
+      <nav>
+        <button onclick="scrollToSection('projects')">Projects</button>
+        <button onclick="scrollToSection('resume')">Resume & Cover Letter</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>List your projects here.</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume & Cover Letter</h2>
+      <p>Link or embed your resume and cover letter here.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Your contact info goes here.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
