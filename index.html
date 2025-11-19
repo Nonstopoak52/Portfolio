@@ -110,19 +110,12 @@
 
 
 <section id="accolades">
-<h2>Accolades</h2>
-<div class="accordion">
-<button class="accordion-btn">Randall Brezina</button>
-<div class="accordion-content"><p>You're cooked bro. Just switch to accounting</p></div>
-
-
-<button class="accordion-btn">Dustin Peterson</button>
-<div class="accordion-content"><p>Truth be told, you're doing things I ain't even know existed. Can't wait to cast with you man.</p></div>
-
-
-<button class="accordion-btn">Timothy Frantz</button>
-<div class="accordion-content"><p>Possibly the best student to ever grace my path. My life has never been the same, and I don't believe another student like him will come around. Truly the Micheal Jordan X Lebron James of coding</p></div>
-</div>
+  <h2>Accolades</h2>
+  <div class="accolades-content">
+    <p><strong>Randall Brezina:</strong> Wahlahi, you're cooked, accounting calling us</p>
+    <p><strong>Dustin Peterson:</strong> Truth be told, you're doing things I ain't even know existed. Can't wait to cast with you man.</p>
+    <p><strong>Timothy Frantz:</strong> Possibly the best student to ever grace my path. My life has never been the same, and I don't believe another student like him will come around. Truly the Micheal Jordan X Lebron James of coding.</p>
+  </div>
 </section>
 
 
@@ -137,23 +130,6 @@
     </section>
   </div>
 
-  <script>
-	const accordions = document.querySelectorAll('.accordion-btn');
 
-accordions.forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-    const panel = btn.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      panel.style.padding = "0 15px";
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.padding = "10px 15px";
-    }
-  });
-});
-</script>
 </body>
 </html>

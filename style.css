@@ -93,42 +93,16 @@ font-size: 1rem;
 }
 
 
-.accordion {
-  width: 100%;
+#accolades {
+  background: white;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.accordion-btn {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
+.accolades-content p {
+  margin: 10px 0;
   font-size: 1rem;
-  transition: background 0.3s ease;
-  margin: 0; /* Remove margins so buttons fit the full width */
-  border-radius: 0; /* Optional: remove rounded corners for full-width effect */
-}
-
-.accordion-btn.active,
-.accordion-btn:hover {
-  background-color: #ccc;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 15px;
-  background-color: white;
-  border-left: 2px solid #0077cc;
-  border-right: 2px solid #0077cc;
-  border-bottom: 2px solid #0077cc;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.accordion-btn.active + .accordion-content {
-  max-height: 500px; /* adjust based on content */
-  padding: 10px 15px;
 }
