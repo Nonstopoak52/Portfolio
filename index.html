@@ -3,140 +3,183 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cody Borho Portfolio</title>
+
+<title>Cody Borho | Portfolio</title>
+
 <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-<div class="container">
-<header>
-<div class="profile-pic-container">
-<img src="Images/myface.png" alt="Cody Borho" class="profile-pic" />
-</div>
-<h1>Cody Borho</h1>
-<p>My mission is to create meaningful, impactful projects while continually growing as a developer and problem-solver.</p>
 
-
-<nav>
-<button onclick="scrollToSection('projects')">Projects</button>
-<button onclick="scrollToSection('resume')">Resume & Cover Letter</button>
-<button onclick="scrollToSection('contact')">Contact</button>
-<button onclick="scrollToSection('accolades')">Accolades</button>
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="nav-left">Cody Borho</div>
+  <div class="nav-right">
+    <button onclick="scrollToSection('projects')">Projects</button>
+    <button onclick="scrollToSection('resume')">Resume</button>
+    <button onclick="scrollToSection('accolades')">Accolades</button>
+    <button onclick="scrollToSection('contact')">Contact</button>
+  </div>
 </nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="profile-pic-container">
+      <img src="Images/myface.png" alt="Cody Borho" class="profile-pic" />
+    </div>
+
+    <h1 class="title">Cody Borho</h1>
+    <p class="subtitle">
+      Creating meaningful, impactful digital experiences while continuously growing as a developer, designer, and problem-solver.
+    </p>
+  </div>
 </header>
 
+<main>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="project-slot">
-<h3>UX/UI Design: Audio Bites</h3>
-<div class="project-description">Developed around 62 pages of html code that had audio related code and text that would highlight with the speech in the audio files. Along with really amazing looking design that mimics Audible.com</div>
-</div>
-<div class="project-slot">
-<h3>Capstone Project</h3>
-<div class="project-description">Developed with a team, a database with mobile capabilites, security, and data tracking for Techbridge. Not only coding but assisting in developing Enitity Relationship Diagrams and Data Flow Diagrams, being able to understand the full business.</div>
-</div>
-</section>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
 
+  <div class="card-grid">
 
-<section id="resume">
-<h2>Resume</h2>
-<div class="resume-content">
-<a href="Resume/Cody Resume.pdf" download>Download My Resume (PDF)</a>
-<p><strong>Cody Borho</strong></p>
-<p>Borhocody@gmail.com • (403)-394-8808</p>
+    <div class="card">
+      <h3>UX/UI Design: Audio Bites</h3>
+      <p>
+        Developed a 62-page HTML audio-synchronized interactive interface with text highlighting synced to spoken audio. Designed with aesthetics inspired by premium audiobook platforms like Audible.
+      </p>
+    </div>
 
+    <div class="card">
+      <h3>Capstone Project</h3>
+      <p>
+        Built a secure, mobile-ready inventory database with a team for Techbridge. Worked on database structure, security, ERDs, and DFDs — gaining full understanding of the business environment.
+      </p>
+    </div>
 
-<h3>Skills</h3>
-<p><strong>Organizational & Interpersonal Skills</strong></p>
-<ul>
-<li>Strong organizational abilities</li>
-<li>Efficient in team environments</li>
-<li>Great leadership skills</li>
-<li>Friendly demeanor</li>
-<li>Excellent interpersonal and communication skills</li>
-</ul>
-
-
-<p><strong>Programming Languages</strong></p>
-<p>C#, C++, Java, JavaScript, Python, SQL, HTML</p>
-
-
-<p><strong>Software & Frameworks</strong></p>
-<p>Microsoft Office, Adobe Photoshop, Maple, Git, React, jQuery</p>
-
-
-<h3>Professional Experience</h3>
-<p><strong>Down to Earth Labs Inc., 3510 6 Ave North, Lethbridge, AB Sep-Nov 2023</strong></p>
-<p>Soil Technician</p>
-<ul>
-<li>Great contribution to the grinders technology to allow for more efficient operation practices</li>
-<li>Efficient worker, completing my job long before the day had ended</li>
-<li>Team player, assisting with other tasks to boost productivity amongst the team</li>
-</ul>
-
-
-<p><strong>Anchor Products, 2801 2 Ave North, Lethbridge, AB Jul-Aug 2024</strong></p>
-<p>Warehouse Management</p>
-<ul>
-<li>Incredible efforts towards revitalizing the inventory management system</li>
-<li>Record keeping skills that allowed a greater understanding of inventory for the team</li>
-<li>Managed Solo shipments coming in and out demonstrating great responsibility</li>
-<li>Effortlessly handling both customers and drivers, being able to assist both with their needs</li>
-</ul>
-
-
-<h3>Projects & Extracurricular</h3>
-<p><strong>MID Techbridge Sep-Apr 2025-2026</strong></p>
-<ul>
-<li>Developed an Inventory Management Database for Techbridge to assist with their work</li>
-<li>Developed a systems interface for onsite workers to track and update the inventory when interacting with a client</li>
-</ul>
-
-
-<p><strong>Entrepreneurship Course Sep-Dec 2025</strong></p>
-<ul>
-<li>Created a functioning business with an innovative idea</li>
-<li>Demonstrated great leadership via resolving conflicts between members</li>
-<li>Spearheading the creative process and assisting team members with complex marketing strategies</li>
-</ul>
-
-
-<h3>Education</h3>
-<p><strong>Lethbridge Polytechnic, 3000 College Dr South, Lethbridge, AB 2026</strong></p>
-<p>Associate's degree in computer science, 3.6 GPA</p>
-<p>Relevant course work: Capstone project: Techbridge, UI-UX website and presentations.</p>
-</div>
-</section>
-
-
-<section id="accolades">
-  <h2>Accolades</h2>
-  <div class="accolades-content">
-    <p><strong>Randall Brezina:</strong> Wahlahi, you're cooked, accounting calling us</p>
-    <p><strong>Dustin Peterson:</strong> Truth be told, you're doing things I ain't even know existed. Can't wait to cast with you man.</p>
-    <p><strong>Timothy Frantz:</strong> Possibly the best student to ever grace my path. My life has never been the same, and I don't believe another student like him will come around. Truly the Micheal Jordan X Lebron James of coding.</p>
   </div>
 </section>
 
 
+<!-- RESUME -->
+<section id="resume" class="section">
+  <h2 class="section-title">Resume</h2>
 
-
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> borhocody@gmail.com</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cody-borho-448723304">linkedin.com/in/cody-borho</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Nonstopoak52">github.com/Nonstopoak52</a></p>
-    </section>
+  <div class="resume-download">
+    <a href="Resume/Cody Resume.pdf" download>⬇ Download My Resume</a>
   </div>
+
+  <div class="resume-section">
+    <h3>Skills</h3>
+
+    <h4>Organizational & Interpersonal</h4>
+    <ul>
+      <li>Strong organizational abilities</li>
+      <li>Efficient in team environments</li>
+      <li>Leadership & communication excellence</li>
+      <li>Friendly and collaborative personality</li>
+    </ul>
+
+    <h4>Programming Languages</h4>
+    <p>C#, C++, Java, JavaScript, Python, SQL, HTML</p>
+
+    <h4>Software & Frameworks</h4>
+    <p>Microsoft Office, Adobe Photoshop, Maple, Git, React, jQuery</p>
+
+    <h3>Professional Experience</h3>
+
+    <div class="job">
+      <h4>Down to Earth Labs Inc. (Sep–Nov 2023)</h4>
+      <p class="role">Soil Technician</p>
+      <ul>
+        <li>Enhanced grinder technology, improving workflow efficiency</li>
+        <li>Consistently completed tasks ahead of schedule</li>
+        <li>Contributed as a reliable team player</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h4>Anchor Products (Jul–Aug 2024)</h4>
+      <p class="role">Warehouse Management</p>
+      <ul>
+        <li>Improved inventory management systems</li>
+        <li>Accurate record-keeping for better operational insight</li>
+        <li>Managed shipments independently</li>
+        <li>Provided confident, helpful customer and driver support</li>
+      </ul>
+    </div>
+
+    <h3>Projects & Extracurricular</h3>
+
+    <div class="job">
+      <h4>MID Techbridge (2025–2026)</h4>
+      <ul>
+        <li>Developed an inventory database for Techbridge</li>
+        <li>Created a systems interface for onsite workers</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h4>Entrepreneurship Course (2025)</h4>
+      <ul>
+        <li>Co-founded a functioning business with an innovative concept</li>
+        <li>Resolved team conflicts with leadership & diplomacy</li>
+        <li>Led creative direction and marketing strategy</li>
+      </ul>
+    </div>
+
+    <h3>Education</h3>
+    <p><strong>Lethbridge Polytechnic (2026)</strong><br>
+      Associate Degree in Computer Science • 3.6 GPA<br>
+      Relevant coursework: Capstone Project (Techbridge), UX/UI development
+    </p>
+  </div>
+</section>
+
+
+<!-- ACCOLADES -->
+<section id="accolades" class="section">
+  <h2 class="section-title">Accolades</h2>
+
+  <div class="card-grid">
+
+    <div class="card quote">
+      <p><strong>Randall Brezina:</strong><br> “Wahlahi, you're cooked, accounting calling us.”</p>
+    </div>
+
+    <div class="card quote">
+      <p><strong>Dustin Peterson:</strong><br> “Truth be told, you're doing things I didn't even know existed. Can't wait to cast with you man.”</p>
+    </div>
+
+    <div class="card quote">
+      <p><strong>Timothy Frantz:</strong><br> “Possibly the best student I’ve ever taught. A Michael Jordan × LeBron James of coding.”</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+  <p><strong>Email:</strong> borhocody@gmail.com</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cody-borho-448723304">linkedin.com/in/cody-borho</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/Nonstopoak52">github.com/Nonstopoak52</a></p>
+</section>
+
+</main>
+
 
 <script>
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
 </script>
+
 </body>
 </html>
