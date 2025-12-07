@@ -1,3 +1,4 @@
+/* GENERAL RESET & GLOBAL */
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +41,7 @@ header {
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-.profile-pic-container img.profile-pic {
+.profile-pic {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -61,7 +62,6 @@ header p {
   margin-right: auto;
 }
 
-/* NAV BUTTONS */
 /* TOP NAVIGATION */
 .top-nav {
   margin-top: 25px;
@@ -101,7 +101,6 @@ section {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: center;
-  animation: fadeIn 0.5s ease both;
 }
 
 section h2 {
@@ -110,35 +109,29 @@ section h2 {
   color: #222;
 }
 
-/* PROJECT CONTENT */
+/* PROJECTS */
 .project-slot {
   margin-bottom: 25px;
 }
 
 .project-slot h3 {
   font-size: 1.3rem;
-  font-weight: bold;
 }
 
 .project-description {
   margin-top: 10px;
   font-size: 1rem;
   color: #444;
-  line-height: 1.5;
 }
 
-/* RESUME SECTION */
+/* RESUME */
 .resume-content *:not(h2) {
   text-align: left;
 }
 
-.resume-content strong {
-  font-weight: 700;
-}
-
 .resume-content ul {
-  margin-top: 8px;
   margin-left: 25px;
+  margin-top: 10px;
 }
 
 .resume-content ul li {
@@ -146,13 +139,6 @@ section h2 {
 }
 
 /* ACCOLADES */
-#accolades {
-  background: white;
-  padding: 35px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
 .accolades-content p {
   margin: 12px 0;
   font-size: 1.05rem;
@@ -164,11 +150,6 @@ section h2 {
 }
 
 /* CONTACT */
-#contact p {
-  font-size: 1.05rem;
-  margin: 10px 0;
-}
-
 #contact a {
   color: #0077cc;
   text-decoration: none;
@@ -178,23 +159,13 @@ section h2 {
   text-decoration: underline;
 }
 
-/* ANIMATIONS */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2.2rem;
   }
-  nav button {
-    display: block;
-    width: 100%;
-    margin: 8px 0;
-  }
-  section {
-    padding: 25px;
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
   }
 }
