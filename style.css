@@ -180,3 +180,16 @@ section h2 {
     gap: 10px;
   }
 }
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.project-link:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
